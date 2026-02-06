@@ -223,25 +223,42 @@
                     <img src="assets/logos/logopetrovenca.png" alt="Petrovenca Logo">
                 </a>
             </div>
+            
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="lang-btn" id="langToggle">
+                    <span class="lang-text">ES</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <button class="lang-option active" data-lang="es">
+                        <span data-i18n="lang.es">Español</span>
+                    </button>
+                    <button class="lang-option" data-lang="en">
+                        <span data-i18n="lang.en">English</span>
+                    </button>
+                </div>
+            </div>
+            
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link active">Inicio</a>
+                    <a href="index.html" class="nav-link active" data-i18n="nav.home">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="servicios.html" class="nav-link">Servicios</a>
+                    <a href="servicios.html" class="nav-link" data-i18n="nav.services">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a href="blog.html" class="nav-link">En Línea</a>
+                    <a href="blog.html" class="nav-link" data-i18n="nav.online">En Línea</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contacto.html" class="nav-link">Contacto</a>
+                    <a href="contacto.html" class="nav-link" data-i18n="nav.contact">Contacto</a>
                 </li>
             </ul>
             
             <!-- Action Buttons for Mobile -->
             <div class="mobile-action-buttons">
-                <a href="contacto.html" class="action-btn primary-btn">Contactar</a>
-                <a href="servicios.html" class="action-btn secondary-btn">Conocer más servicios</a>
+                <a href="contacto.html" class="action-btn primary-btn" data-i18n="nav.contact_btn">Contactar</a>
+                <a href="servicios.html" class="action-btn secondary-btn" data-i18n="nav.more_services">Conocer más servicios</a>
             </div>
             <div class="hamburger" onclick="toggleMobileMenu()">
                 <span class="bar"></span>
@@ -260,11 +277,11 @@
             <div class="video-overlay"></div>
         </div>
         <div class="hero-content">
-            <h1 class="hero-title">Impulsando el Progreso en la Industria Petrolera</h1>
-            <p class="hero-subtitle">Excelencia, seguridad e innovación en servicios petroleros para Venezuela y el mundo</p>
+            <h1 class="hero-title" data-i18n="hero.title">Impulsando el Progreso en la Industria Petrolera</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Excelencia, seguridad e innovación en servicios petroleros para Venezuela y el mundo</p>
             <div class="hero-buttons">
-                <a href="servicios.html" class="btn btn-primary">Nuestros Servicios</a>
-                <a href="contacto.html" class="btn btn-secondary">Contactar</a>
+                <a href="servicios.html" class="btn btn-primary" data-i18n="hero.btn_services">Nuestros Servicios</a>
+                <a href="contacto.html" class="btn btn-secondary" data-i18n="hero.btn_contact">Contactar</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -288,8 +305,8 @@
                                 <!-- Slide 1: Quiénes Somos -->
                                 <div class="slider-slide active">
                                     <div class="about-text-content">
-                                        <h2>QUIÉNES SOMOS</h2>
-                                        <p>Petrovenca es una empresa comprometida con la excelencia en la ejecución de actividades de rehabilitación, perforación y servicios especializados a pozos, así como mantenimiento operacional en facilidades de superficie, levantamiento artificial, proyectos de ingeniería, alquiler de equipos y suministro de materiales para la industria petrolera nacional e internacional. Impulsados por un equipo de profesionales altamente calificados, que nos permite responder eficazmente en las actividades medulares de la industria petrolera y satisfacer los requerimientos de nuestros clientes.</p>
+                                        <h2 data-i18n="about.title">QUIÉNES SOMOS</h2>
+                                        <p data-i18n="about.description">Petrovenca es una empresa comprometida con la excelencia en la ejecución de actividades de rehabilitación, perforación y servicios especializados a pozos, así como mantenimiento operacional en facilidades de superficie, levantamiento artificial, proyectos de ingeniería, alquiler de equipos y suministro de materiales para la industria petrolera nacional e internacional. Impulsados por un equipo de profesionales altamente calificados, que nos permite responder eficazmente en las actividades medulares de la industria petrolera y satisfacer los requerimientos de nuestros clientes.</p>
                                     </div>
                                 </div>
                                 
@@ -297,18 +314,18 @@
                                 <div class="slider-slide">
                                     <div class="about-text-content">
                                         <div class="about-item">
-                                            <h3>Nuestro Propósito</h3>
-                                            <p>Proporcionar soluciones confiables y seguras para impulsar el crecimiento de la industria petrolera, manteniendo siempre el profesionalismo, la seguridad y la responsabilidad como pilares fundamentales de nuestro trabajo.</p>
+                                            <h3 data-i18n="about.purpose_title">Nuestro Propósito</h3>
+                                            <p data-i18n="about.purpose_text">Proporcionar soluciones confiables y seguras para impulsar el crecimiento de la industria petrolera, manteniendo siempre el profesionalismo, la seguridad y la responsabilidad como pilares fundamentales de nuestro trabajo.</p>
                                         </div>
                                         
                                         <div class="about-item">
-                                            <h3>Nuestra Misión</h3>
-                                            <p>Impulsar el progreso en la industria petrolera nacional e internacional, comprometidos con la seguridad, la innovación y la responsabilidad, cumpliendo con estándares técnicos, legales y preservando el ambiente.</p>
+                                            <h3 data-i18n="about.mission_title">Nuestra Misión</h3>
+                                            <p data-i18n="about.mission_text">Impulsar el progreso en la industria petrolera nacional e internacional, comprometidos con la seguridad, la innovación y la responsabilidad, cumpliendo con estándares técnicos, legales y preservando el ambiente.</p>
                                         </div>
                                         
                                         <div class="about-item">
-                                            <h3>Nuestra Visión</h3>
-                                            <p>Ser líderes reconocidos en la industria, destacados por nuestra excelencia, progreso y conocimiento en servicios petroleros. Impulsados por nuestro talentoso equipo altamente calificado.</p>
+                                            <h3 data-i18n="about.vision_title">Nuestra Visión</h3>
+                                            <p data-i18n="about.vision_text">Ser líderes reconocidos en la industria, destacados por nuestra excelencia, progreso y conocimiento en servicios petroleros. Impulsados por nuestro talentoso equipo altamente calificado.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -333,15 +350,15 @@
                         <div class="about-stats">
                             <div class="stat-item">
                                 <div class="stat-number">15+</div>
-                                <div class="stat-label">Años de Experiencia</div>
+                                <div class="stat-label" data-i18n="about.stat_years">Años de Experiencia</div>
                             </div>
                             <div class="stat-item">
                                 <div class="stat-number">50+</div>
-                                <div class="stat-label">Proyectos Completados</div>
+                                <div class="stat-label" data-i18n="about.stat_projects">Proyectos Completados</div>
                             </div>
                             <div class="stat-item">
                                 <div class="stat-number">100%</div>
-                                <div class="stat-label">Compromiso Seguridad</div>
+                                <div class="stat-label" data-i18n="about.stat_safety">Compromiso Seguridad</div>
                             </div>
                         </div>
                     </div>
@@ -355,17 +372,17 @@
     <section class="projects">
         <div class="container">
             <div class="section-header">
-                <h2>Servicios Medulares</h2>
-                <p>Innovación y excelencia en cada proyecto</p>
+                <h2 data-i18n="projects.title">Servicios Medulares</h2>
+                <p data-i18n="projects.subtitle">Innovación y excelencia en cada proyecto</p>
             </div>
             <div class="projects-grid">
                 <a href="servicios.html" class="project-card project-card-1">
                         <img src="assets/images/projects/pozo.jpg" alt="Proyecto de perforación petrolera" loading="lazy">
                     <div class="project-content">
-                        <h3>Operaciones de subsuelo</h3>
-                        <p>Tecnología avanzada y equipos especializados para operaciones de perforación seguras y eficientes.</p>
+                        <h3 data-i18n="projects.subsurface">Operaciones de subsuelo</h3>
+                        <p data-i18n="projects.subsurface_desc">Tecnología avanzada y equipos especializados para operaciones de perforación seguras y eficientes.</p>
                         <div class="project-link">
-                            <span>Ver Servicios</span>
+                            <span data-i18n="projects.view_services">Ver Servicios</span>
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
@@ -373,10 +390,10 @@
                 <a href="servicios.html" class="project-card project-card-2">
                         <img src="assets/images/equipment/flota.jpg" alt="Flota de equipos petroleros" loading="lazy">
                     <div class="project-content">
-                        <h3>Logística Operacional</h3>
-                        <p>Disponibilidad de vehiculos para transporte y personal y materiales.</p>
+                        <h3 data-i18n="projects.logistics">Logística Operacional</h3>
+                        <p data-i18n="projects.logistics_desc">Disponibilidad de vehiculos para transporte y personal y materiales.</p>
                         <div class="project-link">
-                            <span>Ver Servicios</span>
+                            <span data-i18n="projects.view_services">Ver Servicios</span>
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
@@ -384,10 +401,10 @@
                 <a href="servicios.html" class="project-card project-card-3">
                         <img src="petrovenca-cascos.jpg" alt="Equipo de trabajo Petrovenca con cascos de seguridad" loading="lazy">
                     <div class="project-content">
-                        <h3>Mantenimiento e ingeniería</h3>
-                        <p>Instalaciones avanzadas con una ubicación estratégica en el sector petrolero nacional.</p>
+                        <h3 data-i18n="projects.maintenance">Mantenimiento e ingeniería</h3>
+                        <p data-i18n="projects.maintenance_desc">Instalaciones avanzadas con una ubicación estratégica en el sector petrolero nacional.</p>
                         <div class="project-link">
-                            <span>Ver Servicios</span>
+                            <span data-i18n="projects.view_services">Ver Servicios</span>
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
@@ -400,23 +417,23 @@
     <section class="patio-operacional">
         <div class="container">
             <div class="section-header">
-                <h2>Nuestro Centro de Excelencia</h2>
-                <p>Instalaciones avanzadas con una ubicación estratégica en el sector petrolero nacional</p>
+                <h2 data-i18n="patio.title">Nuestro Centro de Excelencia</h2>
+                <p data-i18n="patio.subtitle">Instalaciones avanzadas con una ubicación estratégica en el sector petrolero nacional</p>
             </div>
             
             <!-- Stats Row -->
             <div class="patio-stats">
                 <div class="stat-item">
                     <div class="stat-number" data-target="50000">50,000+</div>
-                    <div class="stat-label">m² de Área Operacional</div>
+                    <div class="stat-label" data-i18n="patio.stat_area">m² de Área Operacional</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number" data-target="24">24/7</div>
-                    <div class="stat-label">Monitoreo Continuo</div>
+                    <div class="stat-label" data-i18n="patio.stat_monitoring">Monitoreo Continuo</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number" data-target="15">15+</div>
-                    <div class="stat-label">Años Operando</div>
+                    <div class="stat-label" data-i18n="patio.stat_years">Años Operando</div>
                 </div>
             </div>
 
@@ -429,8 +446,8 @@
                             <i class="fas fa-shield-alt"></i>
                         </div>
                         <div class="feature-content">
-                            <h3>Seguridad Certificada</h3>
-                            <p>Protocolos de seguridad basados en normas internacionales y nacionales ISO, OSHA, ANSI, Covenin..</p>
+                            <h3 data-i18n="patio.security_title">Seguridad Certificada</h3>
+                            <p data-i18n="patio.security_text">Protocolos de seguridad basados en normas internacionales y nacionales ISO, OSHA, ANSI, Covenin..</p>
                         </div>
                     </div>
                     
@@ -439,8 +456,8 @@
                             <i class="fas fa-cogs"></i>
                         </div>
                         <div class="feature-content">
-                            <h3>Tecnología Avanzada</h3>
-                            <p>Equipos de última generación con sistemas de monitoreo en tiempo real y automatización.</p>
+                            <h3 data-i18n="patio.tech_title">Tecnología Avanzada</h3>
+                            <p data-i18n="patio.tech_text">Equipos de última generación con sistemas de monitoreo en tiempo real y automatización.</p>
                         </div>
                     </div>
                     
@@ -449,8 +466,8 @@
                             <i class="fas fa-leaf"></i>
                         </div>
                         <div class="feature-content">
-                            <h3>Compromiso Ambiental</h3>
-                            <p>Operaciones sostenibles bajo un sistema de gestión ambiental.</p>
+                            <h3 data-i18n="patio.env_title">Compromiso Ambiental</h3>
+                            <p data-i18n="patio.env_text">Operaciones sostenibles bajo un sistema de gestión ambiental.</p>
                         </div>
                     </div>
                     
@@ -459,8 +476,8 @@
                             <i class="fas fa-users"></i>
                         </div>
                         <div class="feature-content">
-                            <h3>Equipo Especializado</h3>
-                            <p>Personal altamente capacitado con certificaciones internacionales y experiencia probada.</p>
+                            <h3 data-i18n="patio.team_title">Equipo Especializado</h3>
+                            <p data-i18n="patio.team_text">Personal altamente capacitado con certificaciones internacionales y experiencia probada.</p>
                         </div>
                     </div>
                 </div>
@@ -474,19 +491,19 @@
                     <div class="gallery-grid">
                         <div class="gallery-item">
                             <img src="assets/images/projects/pozo 3.jpg" alt="Equipos de perforación" loading="lazy">
-                            <div class="gallery-caption">Equipos de Perforación</div>
+                            <div class="gallery-caption" data-i18n="patio.gallery_drilling">Equipos de Perforación</div>
                         </div>
                         <div class="gallery-item">
                             <img src="assets/images/projects/pozo 4.jpg" alt="Infraestructura petrolera" loading="lazy">
-                            <div class="gallery-caption">Infraestructura Moderna</div>
+                            <div class="gallery-caption" data-i18n="patio.gallery_infra">Infraestructura Moderna</div>
                         </div>
                         <div class="gallery-item">
                             <img src="assets/images/projects/centro-de-excelencia.jpg" alt="Operaciones en campo" loading="lazy">
-                            <div class="gallery-caption">Operaciones en Campo</div>
+                            <div class="gallery-caption" data-i18n="patio.gallery_field">Operaciones en Campo</div>
                         </div>
                         <div class="gallery-item">
                             <img src="assets/images/equipment/flota 2.jpg" alt="Flota especializada" loading="lazy">
-                            <div class="gallery-caption">Flota Especializada</div>
+                            <div class="gallery-caption" data-i18n="patio.gallery_fleet">Flota Especializada</div>
                         </div>
                     </div>
                 </div>
@@ -501,9 +518,9 @@
         <div class="cta-background"></div>
         <div class="container">
             <div class="cta-content">
-                <h2>¿Listo para Impulsar tu Proyecto Petrolero?</h2>
-                <p>Contáctanos para conocer cómo podemos ayudarte con soluciones confiables y seguras</p>
-                <a href="contacto.html" class="btn btn-primary">Solicitar Cotización</a>
+                <h2 data-i18n="cta.title">¿Listo para Impulsar tu Proyecto Petrolero?</h2>
+                <p data-i18n="cta.subtitle">Contáctanos para conocer cómo podemos ayudarte con soluciones confiables y seguras</p>
+                <a href="contacto.html" class="btn btn-primary" data-i18n="cta.button">Solicitar Cotización</a>
             </div>
         </div>
     </section>
@@ -513,7 +530,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeImageModal()">&times;</span>
             <div class="modal-header">
-                <h3>Tour Virtual - Patio Operacional</h3>
+                <h3 data-i18n="modal.title">Tour Virtual - Patio Operacional</h3>
                 <div class="modal-counter">
                     <span id="currentImage">1</span> / <span id="totalImages">5</span>
                 </div>
@@ -547,28 +564,29 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>PETROVENCA</h3>
-                    <p>Líderes en servicios petroleros con excelencia, seguridad e innovación en Venezuela.</p>
+                    <p data-i18n="footer.description">Líderes en servicios petroleros con excelencia, seguridad e innovación en Venezuela.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Enlaces Rápidos</h4>
+                    <h4 data-i18n="footer.quick_links">Enlaces Rápidos</h4>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="blog.html">En Línea</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+                        <li><a href="servicios.html" data-i18n="nav.services">Servicios</a></li>
+                        <li><a href="blog.html" data-i18n="nav.online">En Línea</a></li>
+                        <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contacto</h4>
+                    <h4 data-i18n="footer.contact">Contacto</h4>
                     <p>Email: info@petrovenca.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Petrovenca. Todos los derechos reservados.</p>
+                <p>&copy; 2025 Petrovenca. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
             </div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
     
     <!-- About Slider Script -->

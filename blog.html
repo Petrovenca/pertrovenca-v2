@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -7,15 +8,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="format-detection" content="telephone=no">
     <title>Blog - Petrovenca</title>
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/logos/logo petrovenca.png">
     <link rel="apple-touch-icon" href="assets/logos/logo petrovenca.png">
-    
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Clean Mobile Menu Style -->
     <style>
         /* Clean mobile menu like the reference image */
@@ -42,13 +44,13 @@
                 height: auto !important;
                 max-height: none !important;
             }
-            
+
             .nav-menu.active {
                 opacity: 1 !important;
                 visibility: visible !important;
                 transform: translateY(0) !important;
             }
-            
+
             .nav-item {
                 margin: 0 !important;
                 opacity: 0 !important;
@@ -56,18 +58,32 @@
                 transition: all 0.3s ease !important;
                 transition-delay: 0s !important;
             }
-            
+
             .nav-menu.active .nav-item {
                 opacity: 1 !important;
                 transform: translateX(0) !important;
             }
-            
-            .nav-menu.active .nav-item:nth-child(1) { transition-delay: 0.1s !important; }
-            .nav-menu.active .nav-item:nth-child(2) { transition-delay: 0.15s !important; }
-            .nav-menu.active .nav-item:nth-child(3) { transition-delay: 0.2s !important; }
-            .nav-menu.active .nav-item:nth-child(4) { transition-delay: 0.25s !important; }
-            .nav-menu.active .nav-item:nth-child(5) { transition-delay: 0.3s !important; }
-            
+
+            .nav-menu.active .nav-item:nth-child(1) {
+                transition-delay: 0.1s !important;
+            }
+
+            .nav-menu.active .nav-item:nth-child(2) {
+                transition-delay: 0.15s !important;
+            }
+
+            .nav-menu.active .nav-item:nth-child(3) {
+                transition-delay: 0.2s !important;
+            }
+
+            .nav-menu.active .nav-item:nth-child(4) {
+                transition-delay: 0.25s !important;
+            }
+
+            .nav-menu.active .nav-item:nth-child(5) {
+                transition-delay: 0.3s !important;
+            }
+
             .nav-link {
                 font-size: 1.1rem !important;
                 font-weight: 500 !important;
@@ -80,19 +96,19 @@
                 transition: all 0.2s ease !important;
                 border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
             }
-            
+
             .nav-link:hover {
                 background: rgba(0, 0, 0, 0.05) !important;
                 color: #D50000 !important;
             }
-            
+
             /* Action buttons container - removed extra spacing */
-            
+
             /* Add action buttons */
             .nav-menu .nav-item:last-child {
                 border-bottom: none !important;
             }
-            
+
             /* Mobile Action Buttons */
             .mobile-action-buttons {
                 display: none !important;
@@ -102,22 +118,22 @@
                 flex-direction: column !important;
             }
         }
-        
+
         /* Hide mobile action buttons on desktop */
         @media (min-width: 769px) {
             .mobile-action-buttons {
                 display: none !important;
             }
-            
+
             .hamburger {
                 display: none !important;
             }
-            
+
             .nav-menu.active .mobile-action-buttons {
                 display: flex !important;
                 animation: fadeInUp 0.4s ease 0.4s both !important;
             }
-            
+
             .action-btn {
                 display: block !important;
                 width: 100% !important;
@@ -131,40 +147,41 @@
                 border: none !important;
                 cursor: pointer !important;
             }
-            
+
             .primary-btn {
                 background: #D50000 !important;
                 color: white !important;
             }
-            
+
             .primary-btn:hover {
                 background: #A00D25 !important;
                 transform: translateY(-1px) !important;
                 box-shadow: 0 4px 12px rgba(211, 31, 69, 0.3) !important;
             }
-            
+
             .secondary-btn {
                 background: #333 !important;
                 color: white !important;
             }
-            
+
             .secondary-btn:hover {
                 background: #555 !important;
                 transform: translateY(-1px) !important;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
             }
-            
+
             @keyframes fadeInUp {
                 from {
                     opacity: 0;
                     transform: translateY(20px);
                 }
+
                 to {
                     opacity: 1;
                     transform: translateY(0);
                 }
             }
-            
+
             .hamburger {
                 display: flex !important;
                 flex-direction: column !important;
@@ -176,7 +193,7 @@
                 -webkit-user-select: none !important;
                 user-select: none !important;
             }
-            
+
             .hamburger .bar {
                 width: 24px !important;
                 height: 2px !important;
@@ -186,17 +203,17 @@
                 transition: all 0.3s ease !important;
                 transform-origin: center !important;
             }
-            
+
             .hamburger.active .bar:nth-child(1) {
                 transform: rotate(45deg) translate(5px, 5px) !important;
                 background: #333 !important;
             }
-            
+
             .hamburger.active .bar:nth-child(2) {
                 opacity: 0 !important;
                 transform: scaleX(0) !important;
             }
-            
+
             .hamburger.active .bar:nth-child(3) {
                 transform: rotate(-45deg) translate(7px, -6px) !important;
                 background: #333 !important;
@@ -204,6 +221,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -213,28 +231,45 @@
                     <img src="assets/logos/logopetrovenca.png" alt="Petrovenca Logo">
                 </a>
             </div>
-            
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="lang-btn" id="langToggle">
+                    <span class="lang-text">ES</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <button class="lang-option active" data-lang="es">
+                        <span data-i18n="lang.es">Español</span>
+                    </button>
+                    <button class="lang-option" data-lang="en">
+                        <span data-i18n="lang.en">English</span>
+                    </button>
+                </div>
+            </div>
+
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="index.html" class="nav-link" data-i18n="nav.home">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="servicios.html" class="nav-link">Servicios</a>
+                    <a href="servicios.html" class="nav-link" data-i18n="nav.services">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a href="blog.html" class="nav-link active">En Línea</a>
+                    <a href="blog.html" class="nav-link active" data-i18n="nav.online">En Línea</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contacto.html" class="nav-link">Contacto</a>
+                    <a href="contacto.html" class="nav-link" data-i18n="nav.contact">Contacto</a>
                 </li>
             </ul>
-            
+
             <!-- Action Buttons for Mobile -->
             <div class="mobile-action-buttons">
-                <a href="contacto.html" class="action-btn primary-btn">Contactar</a>
-                <a href="servicios.html" class="action-btn secondary-btn">Ver servicios</a>
+                <a href="contacto.html" class="action-btn primary-btn" data-i18n="nav.contact_btn">Contactar</a>
+                <a href="servicios.html" class="action-btn secondary-btn" data-i18n="nav.view_services">Ver
+                    servicios</a>
             </div>
-            
+
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -248,8 +283,9 @@
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>En Línea Petrovenca</h1>
-                <p>Videos educativos, campañas de seguridad y eventos de la industria petrolera</p>
+                <h1 data-i18n="blog.hero_title">En Línea Petrovenca</h1>
+                <p data-i18n="blog.hero_subtitle">Videos educativos, campañas de seguridad y eventos de la industria
+                    petrolera</p>
             </div>
         </div>
     </section>
@@ -262,15 +298,19 @@
                 <!-- Videos de Petrovenca -->
                 <div class="category-section">
                     <div class="category-header">
-                        <h2><i class="fas fa-play-circle"></i> Contenido Petrovenca</h2>
-                        <p>Videos informativos y campañas de la empresa</p>
+                        <h2><i class="fas fa-play-circle"></i> <span data-i18n="blog.category_title">Contenido
+                                Petrovenca</span></h2>
+                        <p data-i18n="blog.category_subtitle">Videos informativos y campañas de la empresa</p>
                     </div>
                     <div class="video-grid">
                         <!-- Video Principal -->
-                        <div class="video-card" data-video="https://cdn.petrovenca.com/videos_page/petrovenca%20primer%20video%20en%20linea.mp4">
+                        <div class="video-card"
+                            data-video="https://cdn.petrovenca.com/videos_page/petrovenca%20primer%20video%20en%20linea.mp4">
                             <div class="video-thumbnail">
                                 <video preload="metadata" muted>
-                                    <source src="https://cdn.petrovenca.com/videos_page/petrovenca%20primer%20video%20en%20linea.mp4" type="video/mp4">
+                                    <source
+                                        src="https://cdn.petrovenca.com/videos_page/petrovenca%20primer%20video%20en%20linea.mp4"
+                                        type="video/mp4">
                                 </video>
                                 <div class="play-button">
                                     <i class="fas fa-play"></i>
@@ -288,10 +328,13 @@
                         </div>
 
                         <!-- Abrochate a la Vida -->
-                        <div class="video-card" data-video="https://cdn.petrovenca.com/videos_page/PARADA%20ABROCHATE%20A%20LA%20VIDA.mp4">
+                        <div class="video-card"
+                            data-video="https://cdn.petrovenca.com/videos_page/PARADA%20ABROCHATE%20A%20LA%20VIDA.mp4">
                             <div class="video-thumbnail">
                                 <video preload="metadata" muted>
-                                    <source src="https://cdn.petrovenca.com/videos_page/PARADA%20ABROCHATE%20A%20LA%20VIDA.mp4" type="video/mp4">
+                                    <source
+                                        src="https://cdn.petrovenca.com/videos_page/PARADA%20ABROCHATE%20A%20LA%20VIDA.mp4"
+                                        type="video/mp4">
                                 </video>
                                 <div class="play-button">
                                     <i class="fas fa-play"></i>
@@ -309,10 +352,12 @@
                         </div>
 
                         <!-- Fire Show 2025 -->
-                        <div class="video-card" data-video="https://cdn.petrovenca.com/videos_page/FIRE%20SHOW%202025.mp4">
+                        <div class="video-card"
+                            data-video="https://cdn.petrovenca.com/videos_page/FIRE%20SHOW%202025.mp4">
                             <div class="video-thumbnail">
                                 <video preload="metadata" muted>
-                                    <source src="https://cdn.petrovenca.com/videos_page/FIRE%20SHOW%202025.mp4" type="video/mp4">
+                                    <source src="https://cdn.petrovenca.com/videos_page/FIRE%20SHOW%202025.mp4"
+                                        type="video/mp4">
                                 </video>
                                 <div class="play-button">
                                     <i class="fas fa-play"></i>
@@ -361,30 +406,32 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>PETROVENCA</h3>
-                    <p>Líderes en servicios petroleros con excelencia, seguridad e innovación en Venezuela.</p>
+                    <p data-i18n="footer.description">Líderes en servicios petroleros con excelencia, seguridad e
+                        innovación en Venezuela.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Enlaces Rápidos</h4>
+                    <h4 data-i18n="footer.quick_links">Enlaces Rápidos</h4>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="blog.html">En Línea</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+                        <li><a href="servicios.html" data-i18n="nav.services">Servicios</a></li>
+                        <li><a href="blog.html" data-i18n="nav.online">En Línea</a></li>
+                        <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contacto</h4>
+                    <h4 data-i18n="footer.contact">Contacto</h4>
                     <p>Email: info@petrovenca.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Petrovenca. Todos los derechos reservados.</p>
+                <p>&copy; 2024 Petrovenca. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
             </div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
-    
+
     <!-- Video Modal Script -->
     <script>
         const modal = document.getElementById('videoModal');
@@ -398,7 +445,7 @@
 
         // Open modal when video card is clicked
         videoCards.forEach(card => {
-            card.addEventListener('click', function() {
+            card.addEventListener('click', function () {
                 const videoSrc = this.getAttribute('data-video');
                 const title = this.querySelector('h3').textContent;
                 const description = this.querySelector('.video-info p').textContent;
@@ -417,7 +464,7 @@
         });
 
         // Close modal
-        closeModal.addEventListener('click', function() {
+        closeModal.addEventListener('click', function () {
             modal.style.display = 'none';
             modalVideo.pause();
             modalVideo.src = '';
@@ -425,7 +472,7 @@
         });
 
         // Close modal when clicking outside
-        modal.addEventListener('click', function(e) {
+        modal.addEventListener('click', function (e) {
             if (e.target === modal) {
                 modal.style.display = 'none';
                 modalVideo.pause();
@@ -437,15 +484,16 @@
         // Generate video thumbnails
         const videoElements = document.querySelectorAll('.video-thumbnail video');
         videoElements.forEach(video => {
-            video.addEventListener('loadedmetadata', function() {
+            video.addEventListener('loadedmetadata', function () {
                 // Set current time to 1 second to get a good thumbnail
                 this.currentTime = 1;
             });
-            
-            video.addEventListener('seeked', function() {
+
+            video.addEventListener('seeked', function () {
                 // Thumbnail is now set
             });
         });
     </script>
 </body>
+
 </html>

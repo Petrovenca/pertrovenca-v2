@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -7,21 +8,23 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="format-detection" content="telephone=no">
     <title>Servicios Petroleros - Petrovenca | Soluciones Oil & Gas Venezuela</title>
-    <meta name="description" content="Servicios petroleros especializados en Venezuela. Perforación, mantenimiento, consultoría y soluciones integrales para la industria oil & gas con excelencia y seguridad.">
-    <meta name="keywords" content="servicios petroleros Venezuela, perforación, mantenimiento petrolero, consultoría oil & gas, soluciones petroleras, Venezuela">
+    <meta name="description"
+        content="Servicios petroleros especializados en Venezuela. Perforación, mantenimiento, consultoría y soluciones integrales para la industria oil & gas con excelencia y seguridad.">
+    <meta name="keywords"
+        content="servicios petroleros Venezuela, perforación, mantenimiento petrolero, consultoría oil & gas, soluciones petroleras, Venezuela">
     <meta name="author" content="Petrovenca">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/logos/logo petrovenca.png">
     <link rel="apple-touch-icon" href="assets/logos/logo petrovenca.png">
-    
+
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    
+
     <!-- Clean Mobile Menu Style -->
     <style>
         /* Clean mobile menu like the reference image */
@@ -48,13 +51,13 @@
                 height: auto !important;
                 max-height: none !important;
             }
-            
+
             .nav-menu.active {
                 opacity: 1 !important;
                 visibility: visible !important;
                 transform: translateY(0) !important;
             }
-            
+
             .nav-item {
                 margin: 0 !important;
                 opacity: 0 !important;
@@ -62,18 +65,32 @@
                 transition: all 0.3s ease !important;
                 transition-delay: 0s !important;
             }
-            
+
             .nav-menu.active .nav-item {
                 opacity: 1 !important;
                 transform: translateX(0) !important;
             }
-            
-            .nav-menu.active .nav-item:nth-child(1) { transition-delay: 0.1s !important; }
-            .nav-menu.active .nav-item:nth-child(2) { transition-delay: 0.15s !important; }
-            .nav-menu.active .nav-item:nth-child(3) { transition-delay: 0.2s !important; }
-            .nav-menu.active .nav-item:nth-child(4) { transition-delay: 0.25s !important; }
-            .nav-menu.active .nav-item:nth-child(5) { transition-delay: 0.3s !important; }
-            
+
+            .nav-menu.active .nav-item:nth-child(1) {
+                transition-delay: 0.1s !important;
+            }
+
+            .nav-menu.active .nav-item:nth-child(2) {
+                transition-delay: 0.15s !important;
+            }
+
+            .nav-menu.active .nav-item:nth-child(3) {
+                transition-delay: 0.2s !important;
+            }
+
+            .nav-menu.active .nav-item:nth-child(4) {
+                transition-delay: 0.25s !important;
+            }
+
+            .nav-menu.active .nav-item:nth-child(5) {
+                transition-delay: 0.3s !important;
+            }
+
             .nav-link {
                 font-size: 1.1rem !important;
                 font-weight: 500 !important;
@@ -86,19 +103,19 @@
                 transition: all 0.2s ease !important;
                 border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
             }
-            
+
             .nav-link:hover {
                 background: rgba(0, 0, 0, 0.05) !important;
                 color: #D50000 !important;
             }
-            
+
             /* Action buttons container - removed extra spacing */
-            
+
             /* Add action buttons */
             .nav-menu .nav-item:last-child {
                 border-bottom: none !important;
             }
-            
+
             /* Mobile Action Buttons */
             .mobile-action-buttons {
                 display: none !important;
@@ -108,22 +125,22 @@
                 flex-direction: column !important;
             }
         }
-        
+
         /* Hide mobile action buttons on desktop */
         @media (min-width: 769px) {
             .mobile-action-buttons {
                 display: none !important;
             }
-            
+
             .hamburger {
                 display: none !important;
             }
-            
+
             .nav-menu.active .mobile-action-buttons {
                 display: flex !important;
                 animation: fadeInUp 0.4s ease 0.4s both !important;
             }
-            
+
             .action-btn {
                 display: block !important;
                 width: 100% !important;
@@ -137,40 +154,41 @@
                 border: none !important;
                 cursor: pointer !important;
             }
-            
+
             .primary-btn {
                 background: #D50000 !important;
                 color: white !important;
             }
-            
+
             .primary-btn:hover {
                 background: #A00D25 !important;
                 transform: translateY(-1px) !important;
                 box-shadow: 0 4px 12px rgba(211, 31, 69, 0.3) !important;
             }
-            
+
             .secondary-btn {
                 background: #333 !important;
                 color: white !important;
             }
-            
+
             .secondary-btn:hover {
                 background: #555 !important;
                 transform: translateY(-1px) !important;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
             }
-            
+
             @keyframes fadeInUp {
                 from {
                     opacity: 0;
                     transform: translateY(20px);
                 }
+
                 to {
                     opacity: 1;
                     transform: translateY(0);
                 }
             }
-            
+
             .hamburger {
                 display: flex !important;
                 flex-direction: column !important;
@@ -182,7 +200,7 @@
                 -webkit-user-select: none !important;
                 user-select: none !important;
             }
-            
+
             .hamburger .bar {
                 width: 24px !important;
                 height: 2px !important;
@@ -192,17 +210,17 @@
                 transition: all 0.3s ease !important;
                 transform-origin: center !important;
             }
-            
+
             .hamburger.active .bar:nth-child(1) {
                 transform: rotate(45deg) translate(5px, 5px) !important;
                 background: #333 !important;
             }
-            
+
             .hamburger.active .bar:nth-child(2) {
                 opacity: 0 !important;
                 transform: scaleX(0) !important;
             }
-            
+
             .hamburger.active .bar:nth-child(3) {
                 transform: rotate(-45deg) translate(7px, -6px) !important;
                 background: #333 !important;
@@ -210,6 +228,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -219,25 +238,42 @@
                     <img src="assets/logos/logopetrovenca.png" alt="Petrovenca Logo">
                 </a>
             </div>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="lang-btn" id="langToggle">
+                    <span class="lang-text">ES</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <button class="lang-option active" data-lang="es">
+                        <span data-i18n="lang.es">Español</span>
+                    </button>
+                    <button class="lang-option" data-lang="en">
+                        <span data-i18n="lang.en">English</span>
+                    </button>
+                </div>
+            </div>
+
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="index.html" class="nav-link" data-i18n="nav.home">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="servicios.html" class="nav-link active">Servicios</a>
+                    <a href="servicios.html" class="nav-link active" data-i18n="nav.services">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a href="blog.html" class="nav-link">En Línea</a>
+                    <a href="blog.html" class="nav-link" data-i18n="nav.online">En Línea</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contacto.html" class="nav-link">Contacto</a>
+                    <a href="contacto.html" class="nav-link" data-i18n="nav.contact">Contacto</a>
                 </li>
             </ul>
-            
+
             <!-- Action Buttons for Mobile -->
             <div class="mobile-action-buttons">
-                <a href="contacto.html" class="action-btn primary-btn">Contactar</a>
-                <a href="blog.html" class="action-btn secondary-btn">En Línea</a>
+                <a href="contacto.html" class="action-btn primary-btn" data-i18n="nav.contact_btn">Contactar</a>
+                <a href="blog.html" class="action-btn secondary-btn" data-i18n="nav.online">En Línea</a>
             </div>
             <div class="hamburger" onclick="toggleMobileMenu()">
                 <span class="bar"></span>
@@ -252,8 +288,9 @@
         <div class="hero-background"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Servicios y Equipos Petroleros</h1>
-            <p>Soluciones integrales y equipos especializados para la industria oil & gas con excelencia, seguridad e innovación</p>
+            <h1 data-i18n="services.hero_title">Servicios y Equipos Petroleros</h1>
+            <p data-i18n="services.hero_subtitle">Soluciones integrales y equipos especializados para la industria oil &
+                gas con excelencia, seguridad e innovación</p>
         </div>
     </section>
 
@@ -261,10 +298,11 @@
     <section class="services-overview">
         <div class="container">
             <div class="section-header">
-                <h2>Nuestros Servicios</h2>
-                <p>Ofrecemos una gama completa de servicios petroleros diseñados para impulsar el progreso de la industria HACIA OPERACIONES  EFECTIVAS.</p>
+                <h2 data-i18n="services.overview_title">Nuestros Servicios</h2>
+                <p data-i18n="services.overview_subtitle">Ofrecemos una gama completa de servicios petroleros diseñados
+                    para impulsar el progreso de la industria HACIA OPERACIONES EFECTIVAS.</p>
             </div>
-            
+
             <!-- Desktop Grid -->
             <div class="services-grid-slider desktop-only">
                 <div class="services-grid-container" id="services-grid">
@@ -273,16 +311,20 @@
                         <div class="service-icon">
                             <i class="fas fa-hammer"></i>
                         </div>
-                        <h3>Operaciones de subsuelo</h3>
+                        <h3 data-i18n="service.subsurface_title">Operaciones de subsuelo</h3>
                         <ul class="service-features">
-                            <li>Perforación, workover y cambios de completación</li>
-                            <li>Limpieza y estimulación de pozos</li>
-                            <li>Suministro e instalación de sistemas de levantamiento artificial</li>
-                            <li>Servicios de guaya fina, eléctrica y gruesa (en tierra y en lago)</li>
-                            <li>Servicio de equipos de control de sólidos</li>
-                            <li>Servicios especializados a pozos (Perforación direccional, cementación, fluidos, corrida de revestidores)</li>
+                            <li data-i18n="service.subsurface_1">Perforación, workover y cambios de completación</li>
+                            <li data-i18n="service.subsurface_2">Limpieza y estimulación de pozos</li>
+                            <li data-i18n="service.subsurface_3">Suministro e instalación de sistemas de levantamiento
+                                artificial</li>
+                            <li data-i18n="service.subsurface_4">Servicios de guaya fina, eléctrica y gruesa (en tierra
+                                y en lago)</li>
+                            <li data-i18n="service.subsurface_5">Servicio de equipos de control de sólidos</li>
+                            <li data-i18n="service.subsurface_6">Servicios especializados a pozos (Perforación
+                                direccional, cementación, fluidos, corrida de revestidores)</li>
                         </ul>
-                        <a href="contacto.html" class="btn btn-primary">Solicitar Equipos</a>
+                        <a href="contacto.html" class="btn btn-primary" data-i18n="service.subsurface_btn">Solicitar
+                            Equipos</a>
                     </div>
 
                     <!-- Consultoría -->
@@ -290,14 +332,16 @@
                         <div class="service-icon">
                             <i class="fas fa-chart-line"></i>
                         </div>
-                        <h3>Consultoría Técnica</h3>
-                        <p>Soluciones integrales para proyectos petroleros: Asesoría en optimización de procesos y análisis de riesgos operacionales</p>
+                        <h3 data-i18n="service.consulting_title">Consultoría Técnica</h3>
+                        <p data-i18n="service.consulting_desc">Soluciones integrales para proyectos petroleros: Asesoría
+                            en optimización de procesos y análisis de riesgos operacionales</p>
                         <ul class="service-features">
-                            <li>Estudios de viabilidad técnica</li>
-                            <li>Optimización de procesos operacionales</li>
-                            <li>Análisis de riesgos operacionales</li>
+                            <li data-i18n="service.consulting_1">Estudios de viabilidad técnica</li>
+                            <li data-i18n="service.consulting_2">Optimización de procesos operacionales</li>
+                            <li data-i18n="service.consulting_3">Análisis de riesgos operacionales</li>
                         </ul>
-                        <a href="contacto.html" class="btn btn-primary">Solicitar Consultoría</a>
+                        <a href="contacto.html" class="btn btn-primary" data-i18n="service.consulting_btn">Solicitar
+                            Consultoría</a>
                     </div>
 
                     <!-- Logística -->
@@ -305,16 +349,18 @@
                         <div class="service-icon">
                             <i class="fas fa-truck"></i>
                         </div>
-                        <h3>Logística Operacional</h3>
-                        <p>Servicios logísticos para el transporte seguro de personal, equipos y materiales petroleros.</p>
+                        <h3 data-i18n="service.logistics_title">Logística Operacional</h3>
+                        <p data-i18n="service.logistics_desc">Servicios logísticos para el transporte seguro de
+                            personal, equipos y materiales petroleros.</p>
                         <ul class="service-features">
-                            <li>Transporte de personal especializado</li>
-                            <li>Movilización de equipos pesados</li>
-                            <li>Gestión de suministros y materiales</li>
-                            <li>Servicios de almacenamiento</li>
-                            <li>Coordinación de operaciones</li>
+                            <li data-i18n="service.logistics_1">Transporte de personal especializado</li>
+                            <li data-i18n="service.logistics_2">Movilización de equipos pesados</li>
+                            <li data-i18n="service.logistics_3">Gestión de suministros y materiales</li>
+                            <li data-i18n="service.logistics_4">Servicios de almacenamiento</li>
+                            <li data-i18n="service.logistics_5">Coordinación de operaciones</li>
                         </ul>
-                        <a href="contacto.html" class="btn btn-primary">Consultar Logística</a>
+                        <a href="contacto.html" class="btn btn-primary" data-i18n="service.logistics_btn">Consultar
+                            Logística</a>
                     </div>
 
                     <!-- Seguridad -->
@@ -322,19 +368,25 @@
                         <div class="service-icon">
                             <i class="fas fa-shield-alt"></i>
                         </div>
-                        <h3>Seguridad Industrial</h3>
-                        <p>Implementación de sistemas de seguridad integrales para proteger a nuestro personal y el medio ambiente.</p>
+                        <h3 data-i18n="service.security_title">Seguridad Industrial</h3>
+                        <p data-i18n="service.security_desc">Implementación de sistemas de seguridad integrales para
+                            proteger a nuestro personal y el medio ambiente.</p>
                         <ul class="service-features">
-                            <li>Gestión Integral para la Seguridad, la Salud y el Medio Ambiente</li>
-                            <li>Promover la salud y el bienestar de los COLABORADORES a través de la implementación de medidas de seguridad y salud ocupacional.</li>
-                            <li>Identificación, Evaluación y control DE los riesgos asociados con las operaciones industriales.</li>
-                            <li>Gestionar los residuos de manera segura y ambientalmente responsable.</li>
+                            <li data-i18n="service.security_1">Gestión Integral para la Seguridad, la Salud y el Medio
+                                Ambiente</li>
+                            <li data-i18n="service.security_2">Promover la salud y el bienestar de los COLABORADORES a
+                                través de la implementación de medidas de seguridad y salud ocupacional.</li>
+                            <li data-i18n="service.security_3">Identificación, Evaluación y control DE los riesgos
+                                asociados con las operaciones industriales.</li>
+                            <li data-i18n="service.security_4">Gestionar los residuos de manera segura y ambientalmente
+                                responsable.</li>
                         </ul>
-                        <a href="contacto.html" class="btn btn-primary">Más Información</a>
+                        <a href="contacto.html" class="btn btn-primary" data-i18n="service.security_btn">Más
+                            Información</a>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Mobile Slider -->
             <div class="mobile-slider mobile-only">
                 <div class="swiper">
@@ -352,13 +404,14 @@
                                     <li>Suministro e instalación de sistemas de levantamiento artificial</li>
                                     <li>Servicios de guaya fina, eléctrica y gruesa (en tierra y en lago)</li>
                                     <li>Servicio de equipos de control de sólidos</li>
-                                    <li>Servicios especializados a pozos (Perforación direccional, cementación, fluidos, corrida de revestidores)</li>
+                                    <li>Servicios especializados a pozos (Perforación direccional, cementación, fluidos,
+                                        corrida de revestidores)</li>
                                 </ul>
                                 <a href="contacto.html" class="btn btn-primary">Solicitar Equipos</a>
                             </div>
                         </div>
-                        
-                        
+
+
                         <!-- Consultoría -->
                         <div class="swiper-slide">
                             <div class="service-card-mobile">
@@ -366,7 +419,8 @@
                                     <i class="fas fa-chart-line"></i>
                                 </div>
                                 <h3>Consultoría Técnica</h3>
-                                <p>Soluciones integrales para proyectos petroleros: Asesoría en optimización de procesos y análisis de riesgos operacionales</p>
+                                <p>Soluciones integrales para proyectos petroleros: Asesoría en optimización de procesos
+                                    y análisis de riesgos operacionales</p>
                                 <ul class="service-features">
                                     <li>Estudios de viabilidad técnica</li>
                                     <li>Optimización de procesos operacionales</li>
@@ -375,7 +429,7 @@
                                 <a href="contacto.html" class="btn btn-primary">Solicitar Consultoría</a>
                             </div>
                         </div>
-                        
+
                         <!-- Logística -->
                         <div class="swiper-slide">
                             <div class="service-card-mobile">
@@ -383,7 +437,8 @@
                                     <i class="fas fa-truck"></i>
                                 </div>
                                 <h3>Logística y Transporte</h3>
-                                <p>Servicios logísticos para el transporte seguro de personal, equipos y materiales petroleros.</p>
+                                <p>Servicios logísticos para el transporte seguro de personal, equipos y materiales
+                                    petroleros.</p>
                                 <ul class="service-features">
                                     <li>Transporte de personal especializado</li>
                                     <li>Movilización de equipos pesados</li>
@@ -394,8 +449,8 @@
                                 <a href="contacto.html" class="btn btn-primary">Consultar Logística</a>
                             </div>
                         </div>
-                        
-                        
+
+
                         <!-- Seguridad Industrial - Parte 1 -->
                         <div class="swiper-slide">
                             <div class="service-card-mobile">
@@ -403,17 +458,20 @@
                                     <i class="fas fa-shield-alt"></i>
                                 </div>
                                 <h3>Seguridad Industrial</h3>
-                                <p>Implementación de sistemas de seguridad integrales para proteger a nuestro personal y el medio ambiente.</p>
+                                <p>Implementación de sistemas de seguridad integrales para proteger a nuestro personal y
+                                    el medio ambiente.</p>
                                 <ul class="service-features">
                                     <li>Gestión Integral para la Seguridad, la Salud y el Medio Ambiente</li>
-                                    <li>Promover la salud y el bienestar de los COLABORADORES a través de la implementación de medidas de seguridad y salud ocupacional.</li>
-                                    <li>Identificación, Evaluación y control DE los riesgos asociados con las operaciones industriales.</li>
+                                    <li>Promover la salud y el bienestar de los COLABORADORES a través de la
+                                        implementación de medidas de seguridad y salud ocupacional.</li>
+                                    <li>Identificación, Evaluación y control DE los riesgos asociados con las
+                                        operaciones industriales.</li>
                                     <li>Gestionar los residuos de manera segura y ambientalmente responsable.</li>
                                 </ul>
                                 <a href="contacto.html" class="btn btn-primary">Más Información</a>
                             </div>
                         </div>
-                        
+
                         <!-- Seguridad Industrial - Parte 2 -->
                         <div class="swiper-slide">
                             <div class="service-card-mobile">
@@ -421,9 +479,11 @@
                                     <i class="fas fa-leaf"></i>
                                 </div>
                                 <h3>Medio Ambiente</h3>
-                                <p>Compromiso con la sostenibilidad y el cuidado del medio ambiente en todas nuestras operaciones.</p>
+                                <p>Compromiso con la sostenibilidad y el cuidado del medio ambiente en todas nuestras
+                                    operaciones.</p>
                                 <ul class="service-features">
-                                    <li>Promover la conservación de recursos naturales y reducir el consumo de energía y agua.</li>
+                                    <li>Promover la conservación de recursos naturales y reducir el consumo de energía y
+                                        agua.</li>
                                     <li>Cumplir con las normas y regulaciones ambientales aplicables.</li>
                                     <li>Monitorear y seguir el impacto ambiental de las operaciones industriales.</li>
                                     <li>Implementación de programas de gestión ambiental</li>
@@ -433,11 +493,11 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Navigation -->
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                    
+
                     <!-- Pagination -->
                     <div class="swiper-pagination"></div>
                 </div>
@@ -449,10 +509,11 @@
     <section class="equipment-categories">
         <div class="container">
             <div class="section-header">
-                <h2>Nuestros Equipos</h2>
-                <p>Equipos especializados con los mas altos estándares de calidad y seguridad</p>
+                <h2 data-i18n="equipment.title">Nuestros Equipos</h2>
+                <p data-i18n="equipment.subtitle">Equipos especializados con los mas altos estándares de calidad y
+                    seguridad</p>
             </div>
-            
+
             <div class="equipment-grid">
                 <!-- Equipo de Perforación -->
                 <div class="equipment-card">
@@ -460,128 +521,148 @@
                         <img src="assets/images/projects/pozo.jpg" alt="Equipo de perforación petrolera" loading="lazy">
                     </div>
                     <div class="equipment-content">
-                        <h3>Operaciones de subsuelo</h3>
-                        <p class="equipment-description">Rigs de perforación de última generación con tecnología avanzada para operaciones seguras y eficientes.</p>
+                        <h3 data-i18n="equipment.subsurface_title">Operaciones de subsuelo</h3>
+                        <p class="equipment-description" data-i18n="equipment.subsurface_desc">Rigs de perforación de
+                            última generación con tecnología avanzada para operaciones seguras y eficientes.</p>
                         <div class="equipment-features">
-                            <span class="feature-tag">Alta Eficiencia</span>
-                            <span class="feature-tag">Mantenimiento Preventivo</span>
+                            <span class="feature-tag" data-i18n="equipment.tag_efficiency">Alta Eficiencia</span>
+                            <span class="feature-tag" data-i18n="equipment.tag_preventive">Mantenimiento
+                                Preventivo</span>
                         </div>
                         <div class="equipment-specs">
                             <div class="spec-item">
                                 <i class="fas fa-cog"></i>
-                                <span>Capacidad: 350-1500 HP</span>
+                                <span data-i18n="equipment.spec_capacity">Capacidad: 350-1500 HP</span>
                             </div>
                             <div class="spec-item">
                                 <i class="fas fa-shield-alt"></i>
-                                <span>Cumplimiento de normas de certificación API</span>
+                                <span data-i18n="equipment.spec_api">Cumplimiento de normas de certificación API</span>
                             </div>
                             <div class="spec-item">
                                 <i class="fas fa-clock"></i>
-                                <span>Disponibilidad 24/7</span>
+                                <span data-i18n="equipment.spec_247">Disponibilidad 24/7</span>
                             </div>
                         </div>
-                        <a href="contacto.html" class="btn btn-primary equipment-btn">Solicitar Información</a>
+                        <a href="contacto.html" class="btn btn-primary equipment-btn"
+                            data-i18n="equipment.btn_info">Solicitar Información</a>
                     </div>
                 </div>
 
                 <!-- Flota de Vehículos -->
                 <div class="equipment-card">
                     <div class="equipment-image">
-                        <img src="assets/images/equipment/flota.jpg" alt="Flota de vehículos especializados" loading="lazy">
+                        <img src="assets/images/equipment/flota.jpg" alt="Flota de vehículos especializados"
+                            loading="lazy">
                     </div>
                     <div class="equipment-content">
-                        <h3>Flota Vehicular</h3>
-                        <p class="equipment-description">Vehículos especializados para transporte de personal, equipos y materiales en operaciones petroleras.</p>
+                        <h3 data-i18n="equipment.fleet_title">Flota Vehicular</h3>
+                        <p class="equipment-description" data-i18n="equipment.fleet_desc">Vehículos especializados para
+                            transporte de personal, equipos y materiales en operaciones petroleras.</p>
                         <div class="equipment-features">
-                            <span class="feature-tag">4x4 Especializado</span>
-                            <span class="feature-tag">Resistente</span>
-                            <span class="feature-tag">Mantenimiento Regular</span>
+                            <span class="feature-tag" data-i18n="equipment.tag_4x4">4x4 Especializado</span>
+                            <span class="feature-tag" data-i18n="equipment.tag_resistant">Resistente</span>
+                            <span class="feature-tag" data-i18n="equipment.tag_maintenance">Mantenimiento Regular</span>
                         </div>
                         <div class="equipment-specs">
                             <div class="spec-item">
                                 <i class="fas fa-truck"></i>
-                                <span>Capacidad: Hasta 60 Ton</span>
+                                <span data-i18n="equipment.spec_fleet_capacity">Capacidad: Hasta 60 Ton</span>
                             </div>
                             <div class="spec-item">
                                 <i class="fas fa-road"></i>
-                                <span>Terreno Difícil</span>
+                                <span data-i18n="equipment.spec_terrain">Terreno Difícil</span>
                             </div>
                             <div class="spec-item">
                                 <i class="fas fa-users"></i>
-                                <span>Transporte Seguro</span>
+                                <span data-i18n="equipment.spec_transport">Transporte Seguro</span>
                             </div>
                         </div>
-                        <a href="contacto.html" class="btn btn-primary equipment-btn">Consultar Disponibilidad</a>
+                        <a href="contacto.html" class="btn btn-primary equipment-btn"
+                            data-i18n="equipment.btn_availability">Consultar Disponibilidad</a>
                     </div>
                 </div>
 
                 <!-- Equipos de Mantenimiento -->
                 <div class="equipment-card">
                     <div class="equipment-image">
-                        <img src="assets/images/equipment/petrovenca fotos del video_ 03_01679 (1).jpg" alt="Equipos de mantenimiento petrolero" loading="lazy">
+                        <img src="assets/images/equipment/petrovenca fotos del video_ 03_01679 (1).jpg"
+                            alt="Equipos de mantenimiento petrolero" loading="lazy">
                     </div>
                     <div class="equipment-content">
-                        <h3>Mantenimiento Operacional</h3>
-                        <p class="equipment-description">Nuestro servicio ofrece mantener y mejorar la integridad y funcionalidad de las estructuras y equipos operacionales, garantizando el buen estado de las estructuras y el funcionamiento óptimo de los equipos, minimizando los tiempos de inactividad y maximizando la productividad.</p>
+                        <h3 data-i18n="equipment.maintenance_title">Mantenimiento Operacional</h3>
+                        <p class="equipment-description" data-i18n="equipment.maintenance_desc">Nuestro servicio ofrece
+                            mantener y mejorar la integridad y funcionalidad de las estructuras y equipos operacionales,
+                            garantizando el buen estado de las estructuras y el funcionamiento óptimo de los equipos,
+                            minimizando los tiempos de inactividad y maximizando la productividad.</p>
                         <div class="equipment-features">
-                            <span class="feature-tag">Inspecciones y evaluaciones</span>
-                            <span class="feature-tag">Mantenimiento preventivo</span>
-                            <span class="feature-tag">Reparación y reemplazo</span>
+                            <span class="feature-tag" data-i18n="equipment.tag_inspections">Inspecciones y
+                                evaluaciones</span>
+                            <span class="feature-tag" data-i18n="equipment.tag_preventive_maint">Mantenimiento
+                                preventivo</span>
+                            <span class="feature-tag" data-i18n="equipment.tag_repair">Reparación y reemplazo</span>
                         </div>
                         <div class="equipment-specs">
                             <div class="spec-item">
                                 <i class="fas fa-search"></i>
-                                <span>Detección temprana de fallas</span>
+                                <span data-i18n="equipment.spec_detection">Detección temprana de fallas</span>
                             </div>
                             <div class="spec-item">
                                 <i class="fas fa-tools"></i>
-                                <span>Mantenimientos programados</span>
+                                <span data-i18n="equipment.spec_scheduled">Mantenimientos programados</span>
                             </div>
                             <div class="spec-item">
                                 <i class="fas fa-sync-alt"></i>
-                                <span>Reemplazo de componentes</span>
+                                <span data-i18n="equipment.spec_replacement">Reemplazo de componentes</span>
                             </div>
                             <div class="spec-item">
                                 <i class="fas fa-broom"></i>
-                                <span>Limpieza integral</span>
+                                <span data-i18n="equipment.spec_cleaning">Limpieza integral</span>
                             </div>
                         </div>
-                        <a href="contacto.html" class="btn btn-primary equipment-btn">Solicitar Servicio</a>
+                        <a href="contacto.html" class="btn btn-primary equipment-btn"
+                            data-i18n="equipment.btn_service">Solicitar Servicio</a>
                     </div>
                 </div>
 
                 <!-- Equipos de Seguridad -->
                 <div class="equipment-card">
                     <div class="equipment-image">
-                        <img src="assets/images/team/trabajadores.jpg" alt="Equipos de seguridad petrolera" loading="lazy">
+                        <img src="assets/images/team/trabajadores.jpg" alt="Equipos de seguridad petrolera"
+                            loading="lazy">
                     </div>
                     <div class="equipment-content">
-                        <h3>Consultoría Operacional </h3>
-                        <p class="equipment-description">Mejorar la eficiencia y eficacia en las operaciones diarias. Los consultores operacionales trabajamos para identificar áreas de mejora y desarrollar soluciones prácticas para aumentar la productividad, reducir costos y mejorar la calidad de los productos o servicios de tu empresa.</p>
+                        <h3 data-i18n="equipment.consulting_title">Consultoría Operacional</h3>
+                        <p class="equipment-description" data-i18n="equipment.consulting_desc">Mejorar la eficiencia y
+                            eficacia en las operaciones diarias. Los consultores operacionales trabajamos para
+                            identificar áreas de mejora y desarrollar soluciones prácticas para aumentar la
+                            productividad, reducir costos y mejorar la calidad de los productos o servicios de tu
+                            empresa.</p>
                         <div class="equipment-features">
-                            <span class="feature-tag">Optimización de procesos</span>
-                            <span class="feature-tag">Reducción de costos</span>
-                            <span class="feature-tag">Calidad operacional</span>
+                            <span class="feature-tag" data-i18n="equipment.tag_optimization">Optimización de
+                                procesos</span>
+                            <span class="feature-tag" data-i18n="equipment.tag_cost">Reducción de costos</span>
+                            <span class="feature-tag" data-i18n="equipment.tag_quality">Calidad operacional</span>
                         </div>
                         <div class="equipment-specs">
                             <div class="spec-item">
                                 <i class="fas fa-project-diagram"></i>
-                                <span>Análisis detallado de procesos</span>
+                                <span data-i18n="equipment.spec_analysis">Análisis detallado de procesos</span>
                             </div>
                             <div class="spec-item">
                                 <i class="fas fa-lightbulb"></i>
-                                <span>Estrategias a medida</span>
+                                <span data-i18n="equipment.spec_strategies">Estrategias a medida</span>
                             </div>
                             <div class="spec-item">
                                 <i class="fas fa-cogs"></i>
-                                <span>Implementación de soluciones</span>
+                                <span data-i18n="equipment.spec_solutions">Implementación de soluciones</span>
                             </div>
                             <div class="spec-item">
                                 <i class="fas fa-chalkboard-teacher"></i>
-                                <span>Capacitación especializada</span>
+                                <span data-i18n="equipment.spec_training">Capacitación especializada</span>
                             </div>
                         </div>
-                        <a href="contacto.html" class="btn btn-primary equipment-btn">Más Información</a>
+                        <a href="contacto.html" class="btn btn-primary equipment-btn"
+                            data-i18n="service.security_btn">Más Información</a>
                     </div>
                 </div>
 
@@ -594,41 +675,46 @@
     <section class="why-choose-us">
         <div class="container">
             <div class="section-header">
-                <h2>¿Por qué elegir Petrovenca?</h2>
-                <p>Nuestro compromiso con la excelencia nos distingue en la industria</p>
+                <h2 data-i18n="why.title">¿Por qué elegir Petrovenca?</h2>
+                <p data-i18n="why.subtitle">Nuestro compromiso con la excelencia nos distingue en la industria</p>
             </div>
-            
+
             <div class="benefits-grid">
                 <div class="benefit-item">
                     <div class="benefit-icon">
                         <i class="fas fa-award"></i>
                     </div>
-                    <h3>Excelencia Técnica</h3>
-                    <p>Más de 15 años de experiencia en la industria petrolera venezolana con un equipo altamente calificado y estrategico.</p>
+                    <h3 data-i18n="why.excellence_title">Excelencia Técnica</h3>
+                    <p data-i18n="why.excellence_text">Más de 15 años de experiencia en la industria petrolera
+                        venezolana con un equipo altamente calificado y estrategico.</p>
                 </div>
-                
+
                 <div class="benefit-item">
                     <div class="benefit-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Seguridad</h3>
-                    <p>Implementamos los más altos estándares de seguridad para proteger a nuestro personal y el medio ambiente. Contamos con certificaciones internacionales como: OSHA, ISO y la IADC.</p>
+                    <h3 data-i18n="why.security_title">Seguridad</h3>
+                    <p data-i18n="why.security_text">Implementamos los más altos estándares de seguridad para proteger a
+                        nuestro personal y el medio ambiente. Contamos con certificaciones internacionales como: OSHA,
+                        ISO y la IADC.</p>
                 </div>
-                
+
                 <div class="benefit-item">
                     <div class="benefit-icon">
                         <i class="fas fa-lightbulb"></i>
                     </div>
-                    <h3>Innovación Constante</h3>
-                    <p>Adoptamos las últimas tecnologías y mejores prácticas para optimizar nuestros servicios.</p>
+                    <h3 data-i18n="why.innovation_title">Innovación Constante</h3>
+                    <p data-i18n="why.innovation_text">Adoptamos las últimas tecnologías y mejores prácticas para
+                        optimizar nuestros servicios.</p>
                 </div>
-                
+
                 <div class="benefit-item">
                     <div class="benefit-icon">
                         <i class="fas fa-handshake"></i>
                     </div>
-                    <h3>Compromiso Total</h3>
-                    <p>Nos comprometemos con el éxito de nuestros clientes y la sostenibilidad de la industria.</p>
+                    <h3 data-i18n="why.commitment_title">Compromiso Total</h3>
+                    <p data-i18n="why.commitment_text">Nos comprometemos con el éxito de nuestros clientes y la
+                        sostenibilidad de la industria.</p>
                 </div>
             </div>
         </div>
@@ -638,39 +724,48 @@
     <section class="industries-served">
         <div class="container">
             <div class="section-header">
-                <h2>Nuestra Experiencia</h2>
-                <p>Servicios especializados para diferentes sectores de la industria petrolera</p>
+                <h2 data-i18n="industries.title">Nuestra Experiencia</h2>
+                <p data-i18n="industries.subtitle">Servicios especializados para diferentes sectores de la industria
+                    petrolera</p>
             </div>
-            
+
             <div class="industries-grid">
                 <div class="industry-item">
-                    <img src="assets/images/icons/pumpjack.svg" alt="Balancín petrolero" class="industry-icon" loading="lazy">
-                    <h3>Exploración y Producción</h3>
-                    <p>Servicios para empresas de exploración y producción de petróleo y gas.</p>
+                    <img src="assets/images/icons/pumpjack.svg" alt="Balancín petrolero" class="industry-icon"
+                        loading="lazy">
+                    <h3 data-i18n="industries.exploration_title">Exploración y Producción</h3>
+                    <p data-i18n="industries.exploration_text">Servicios para empresas de exploración y producción de
+                        petróleo y gas.</p>
                 </div>
-                
+
                 <div class="industry-item">
                     <i class="fas fa-industry"></i>
-                    <h3>Refinación</h3>
-                    <p>Soluciones para refinerías y plantas de procesamiento de hidrocarburos.</p>
+                    <h3 data-i18n="industries.refining_title">Refinación</h3>
+                    <p data-i18n="industries.refining_text">Soluciones para refinerías y plantas de procesamiento de
+                        hidrocarburos.</p>
                 </div>
-                
+
                 <div class="industry-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-building-factory">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-building-factory">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M4 21c1.147 -4.02 1.983 -8.027 2 -12h6c.017 3.973 .853 7.98 2 12" />
                         <path d="M12.5 13h4.5c.025 2.612 .894 5.296 2 8" />
-                        <path d="M9 5a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1" />
+                        <path
+                            d="M9 5a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1" />
                         <path d="M3 21l19 0" />
                     </svg>
-                    <h3>Petroquímica</h3>
-                    <p>Servicios especializados para la industria petroquímica y de derivados.</p>
+                    <h3 data-i18n="industries.petrochemical_title">Petroquímica</h3>
+                    <p data-i18n="industries.petrochemical_text">Servicios especializados para la industria petroquímica
+                        y de derivados.</p>
                 </div>
-                
+
                 <div class="industry-item">
                     <i class="fas fa-warehouse"></i>
-                    <h3>Almacenamiento</h3>
-                    <p>Soluciones para terminales de almacenamiento y distribución de combustibles.</p>
+                    <h3 data-i18n="industries.storage_title">Almacenamiento</h3>
+                    <p data-i18n="industries.storage_text">Soluciones para terminales de almacenamiento y distribución
+                        de combustibles.</p>
                 </div>
             </div>
         </div>
@@ -680,9 +775,10 @@
     <section class="cta">
         <div class="container">
             <div class="cta-content">
-                <h2>¿Listo para impulsar tu proyecto petrolero?</h2>
-                <p>Contáctanos para conocer cómo nuestros servicios y equipos especializados pueden optimizar tus operaciones</p>
-                <a href="contacto.html" class="btn btn-primary">Solicitar Cotización</a>
+                <h2 data-i18n="cta.services_title">¿Listo para impulsar tu proyecto petrolero?</h2>
+                <p data-i18n="cta.services_subtitle">Contáctanos para conocer cómo nuestros servicios y equipos
+                    especializados pueden optimizar tus operaciones</p>
+                <a href="contacto.html" class="btn btn-primary" data-i18n="cta.button">Solicitar Cotización</a>
             </div>
         </div>
     </section>
@@ -693,32 +789,34 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>PETROVENCA</h3>
-                    <p>Líderes en servicios petroleros con excelencia, seguridad e innovación en Venezuela.</p>
+                    <p data-i18n="footer.description">Líderes en servicios petroleros con excelencia, seguridad e
+                        innovación en Venezuela.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Enlaces Rápidos</h4>
+                    <h4 data-i18n="footer.quick_links">Enlaces Rápidos</h4>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="blog.html">En Línea</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+                        <li><a href="servicios.html" data-i18n="nav.services">Servicios</a></li>
+                        <li><a href="blog.html" data-i18n="nav.online">En Línea</a></li>
+                        <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contacto</h4>
+                    <h4 data-i18n="footer.contact">Contacto</h4>
                     <p>Email: info@petrovenca.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Petrovenca. Todos los derechos reservados.</p>
+                <p>&copy; 2024 Petrovenca. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
             </div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
-    
+
     <!-- Grid Script - No longer needed since we removed the carousel -->
-    
+
     <!-- Universal mobile menu script -->
     <script>
         // Universal mobile menu handler
@@ -726,10 +824,10 @@
             console.log('Mobile menu handler called');
             const hamburger = document.querySelector('.hamburger');
             const navMenu = document.querySelector('.nav-menu');
-            
+
             if (hamburger && navMenu) {
                 const isActive = navMenu.classList.contains('active');
-                
+
                 if (isActive) {
                     // Close menu
                     hamburger.classList.remove('active');
@@ -745,36 +843,36 @@
                 }
             }
         }
-        
+
         // Set up event listeners when page loads
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const hamburger = document.querySelector('.hamburger');
             const navMenu = document.querySelector('.nav-menu');
-            
+
             if (hamburger && navMenu) {
                 console.log('Setting up mobile menu');
-                
+
                 // Multiple event listeners for maximum compatibility
                 hamburger.addEventListener('click', handleMobileMenu);
                 hamburger.addEventListener('touchend', handleMobileMenu);
-                hamburger.addEventListener('touchstart', function(e) {
+                hamburger.addEventListener('touchstart', function (e) {
                     e.preventDefault();
                 }, { passive: false });
-                
+
                 // Close menu when clicking nav links
                 const navLinks = document.querySelectorAll('.nav-link');
                 navLinks.forEach(link => {
-                    link.addEventListener('click', function() {
+                    link.addEventListener('click', function () {
                         hamburger.classList.remove('active');
                         navMenu.classList.remove('active');
                         document.body.style.overflow = 'auto';
                     });
                 });
-                
+
                 // Close menu when clicking action buttons
                 const actionButtons = document.querySelectorAll('.action-btn');
                 actionButtons.forEach(button => {
-                    button.addEventListener('click', function() {
+                    button.addEventListener('click', function () {
                         hamburger.classList.remove('active');
                         navMenu.classList.remove('active');
                         document.body.style.overflow = 'auto';
@@ -783,15 +881,15 @@
             }
         });
     </script>
-    
+
     <!--=============== SWIPER JS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
-    
+
     <!--=============== MOBILE SLIDER JS ===============-->
     <script>
         // Initialize Swiper for mobile
         let mobileSwiper;
-        
+
         function initMobileSwiper() {
             if (window.innerWidth <= 768) {
                 if (!mobileSwiper) {
@@ -801,18 +899,18 @@
                         grabCursor: true,
                         centeredSlides: true,
                         slidesPerView: 1,
-                        
+
                         pagination: {
                             el: ".swiper-pagination",
                             clickable: true,
                             dynamicBullets: true,
                         },
-                        
+
                         navigation: {
                             nextEl: ".swiper-button-next",
                             prevEl: ".swiper-button-prev",
                         },
-                        
+
                         autoplay: {
                             delay: 5000,
                             disableOnInteraction: false,
@@ -826,16 +924,17 @@
                 }
             }
         }
-        
+
         // Initialize on load and resize
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             initMobileSwiper();
         });
-        
-        window.addEventListener('resize', function() {
+
+        window.addEventListener('resize', function () {
             initMobileSwiper();
         });
     </script>
-    
+
 </body>
+
 </html>

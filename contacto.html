@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -7,18 +8,20 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="format-detection" content="telephone=no">
     <title>Contacto - Petrovenca | Cotizaciones y Carreras Oil & Gas</title>
-    <meta name="description" content="Contacta con Petrovenca para cotizaciones de servicios petroleros, oportunidades de carrera y consultas. Maracaibo, Venezuela. Formulario de contacto y vacantes disponibles.">
-    <meta name="keywords" content="contacto Petrovenca, cotizaciones petroleras, carreras oil & gas, empleos Venezuela, Maracaibo, servicios petroleros">
+    <meta name="description"
+        content="Contacta con Petrovenca para cotizaciones de servicios petroleros, oportunidades de carrera y consultas. Maracaibo, Venezuela. Formulario de contacto y vacantes disponibles.">
+    <meta name="keywords"
+        content="contacto Petrovenca, cotizaciones petroleras, carreras oil & gas, empleos Venezuela, Maracaibo, servicios petroleros">
     <meta name="author" content="Petrovenca">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/logos/logo petrovenca.png">
     <link rel="apple-touch-icon" href="assets/logos/logo petrovenca.png">
-    
+
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+
     <!-- Clean Mobile Menu Style -->
     <style>
         /* Clean mobile menu like the reference image */
@@ -45,13 +48,13 @@
                 height: auto !important;
                 max-height: none !important;
             }
-            
+
             .nav-menu.active {
                 opacity: 1 !important;
                 visibility: visible !important;
                 transform: translateY(0) !important;
             }
-            
+
             .nav-item {
                 margin: 0 !important;
                 opacity: 0 !important;
@@ -59,18 +62,32 @@
                 transition: all 0.3s ease !important;
                 transition-delay: 0s !important;
             }
-            
+
             .nav-menu.active .nav-item {
                 opacity: 1 !important;
                 transform: translateX(0) !important;
             }
-            
-            .nav-menu.active .nav-item:nth-child(1) { transition-delay: 0.1s !important; }
-            .nav-menu.active .nav-item:nth-child(2) { transition-delay: 0.15s !important; }
-            .nav-menu.active .nav-item:nth-child(3) { transition-delay: 0.2s !important; }
-            .nav-menu.active .nav-item:nth-child(4) { transition-delay: 0.25s !important; }
-            .nav-menu.active .nav-item:nth-child(5) { transition-delay: 0.3s !important; }
-            
+
+            .nav-menu.active .nav-item:nth-child(1) {
+                transition-delay: 0.1s !important;
+            }
+
+            .nav-menu.active .nav-item:nth-child(2) {
+                transition-delay: 0.15s !important;
+            }
+
+            .nav-menu.active .nav-item:nth-child(3) {
+                transition-delay: 0.2s !important;
+            }
+
+            .nav-menu.active .nav-item:nth-child(4) {
+                transition-delay: 0.25s !important;
+            }
+
+            .nav-menu.active .nav-item:nth-child(5) {
+                transition-delay: 0.3s !important;
+            }
+
             .nav-link {
                 font-size: 1.1rem !important;
                 font-weight: 500 !important;
@@ -83,19 +100,19 @@
                 transition: all 0.2s ease !important;
                 border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
             }
-            
+
             .nav-link:hover {
                 background: rgba(0, 0, 0, 0.05) !important;
                 color: #D50000 !important;
             }
-            
+
             /* Action buttons container - removed extra spacing */
-            
+
             /* Add action buttons */
             .nav-menu .nav-item:last-child {
                 border-bottom: none !important;
             }
-            
+
             /* Mobile Action Buttons */
             .mobile-action-buttons {
                 display: none !important;
@@ -105,22 +122,22 @@
                 flex-direction: column !important;
             }
         }
-        
+
         /* Hide mobile action buttons on desktop */
         @media (min-width: 769px) {
             .mobile-action-buttons {
                 display: none !important;
             }
-            
+
             .hamburger {
                 display: none !important;
             }
-            
+
             .nav-menu.active .mobile-action-buttons {
                 display: flex !important;
                 animation: fadeInUp 0.4s ease 0.4s both !important;
             }
-            
+
             .action-btn {
                 display: block !important;
                 width: 100% !important;
@@ -134,40 +151,41 @@
                 border: none !important;
                 cursor: pointer !important;
             }
-            
+
             .primary-btn {
                 background: #D50000 !important;
                 color: white !important;
             }
-            
+
             .primary-btn:hover {
                 background: #A00D25 !important;
                 transform: translateY(-1px) !important;
                 box-shadow: 0 4px 12px rgba(211, 31, 69, 0.3) !important;
             }
-            
+
             .secondary-btn {
                 background: #333 !important;
                 color: white !important;
             }
-            
+
             .secondary-btn:hover {
                 background: #555 !important;
                 transform: translateY(-1px) !important;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
             }
-            
+
             @keyframes fadeInUp {
                 from {
                     opacity: 0;
                     transform: translateY(20px);
                 }
+
                 to {
                     opacity: 1;
                     transform: translateY(0);
                 }
             }
-            
+
             .hamburger {
                 display: flex !important;
                 flex-direction: column !important;
@@ -179,7 +197,7 @@
                 -webkit-user-select: none !important;
                 user-select: none !important;
             }
-            
+
             .hamburger .bar {
                 width: 24px !important;
                 height: 2px !important;
@@ -189,17 +207,17 @@
                 transition: all 0.3s ease !important;
                 transform-origin: center !important;
             }
-            
+
             .hamburger.active .bar:nth-child(1) {
                 transform: rotate(45deg) translate(5px, 5px) !important;
                 background: #333 !important;
             }
-            
+
             .hamburger.active .bar:nth-child(2) {
                 opacity: 0 !important;
                 transform: scaleX(0) !important;
             }
-            
+
             .hamburger.active .bar:nth-child(3) {
                 transform: rotate(-45deg) translate(7px, -6px) !important;
                 background: #333 !important;
@@ -207,6 +225,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -216,25 +235,43 @@
                     <img src="assets/logos/logopetrovenca.png" alt="Petrovenca Logo">
                 </a>
             </div>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="lang-btn" id="langToggle">
+                    <span class="lang-text">ES</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <button class="lang-option active" data-lang="es">
+                        <span data-i18n="lang.es">Español</span>
+                    </button>
+                    <button class="lang-option" data-lang="en">
+                        <span data-i18n="lang.en">English</span>
+                    </button>
+                </div>
+            </div>
+
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="index.html" class="nav-link" data-i18n="nav.home">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="servicios.html" class="nav-link">Servicios</a>
+                    <a href="servicios.html" class="nav-link" data-i18n="nav.services">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a href="blog.html" class="nav-link">En Línea</a>
+                    <a href="blog.html" class="nav-link" data-i18n="nav.online">En Línea</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contacto.html" class="nav-link active">Contacto</a>
+                    <a href="contacto.html" class="nav-link active" data-i18n="nav.contact">Contacto</a>
                 </li>
             </ul>
-            
+
             <!-- Action Buttons for Mobile -->
             <div class="mobile-action-buttons">
-                <a href="contacto.html" class="action-btn primary-btn">Contactar</a>
-                <a href="servicios.html" class="action-btn secondary-btn">Conocer más servicios</a>
+                <a href="contacto.html" class="action-btn primary-btn" data-i18n="nav.contact_btn">Contactar</a>
+                <a href="servicios.html" class="action-btn secondary-btn" data-i18n="nav.more_services">Conocer más
+                    servicios</a>
             </div>
             <div class="hamburger" onclick="toggleMobileMenu()">
                 <span class="bar"></span>
@@ -250,20 +287,21 @@
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>Contacto</h1>
-                <p>Conecta con nosotros para cotizaciones, oportunidades de carrera y consultas</p>
+                <h1 data-i18n="contact.hero_title">Contacto</h1>
+                <p data-i18n="contact.hero_subtitle">Conecta con nosotros para cotizaciones, oportunidades de carrera y
+                    consultas</p>
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="number stat-number" data-target="15">15+</span>
-                        <span class="label">Años de Experiencia</span>
+                        <span class="label" data-i18n="contact.stat_years">Años de Experiencia</span>
                     </div>
                     <div class="stat">
                         <span class="number stat-number" data-target="24">24/7</span>
-                        <span class="label">Soporte Disponible</span>
+                        <span class="label" data-i18n="contact.stat_support">Soporte Disponible</span>
                     </div>
                     <div class="stat">
                         <span class="number stat-number" data-target="100">100%</span>
-                        <span class="label">Compromiso con la Calidad</span>
+                        <span class="label" data-i18n="contact.stat_quality">Compromiso con la Calidad</span>
                     </div>
                 </div>
             </div>
@@ -274,17 +312,18 @@
     <section class="contact-overview">
         <div class="container">
             <div class="section-header">
-                <h2>Conecta con Nuestro Equipo</h2>
-                <p>Estamos aquí para ayudarte con tus proyectos petroleros. Elige la forma que prefieras para contactarnos.</p>
+                <h2 data-i18n="contact.overview_title">Conecta con Nuestro Equipo</h2>
+                <p data-i18n="contact.overview_subtitle">Estamos aquí para ayudarte con tus proyectos petroleros. Elige
+                    la forma que prefieras para contactarnos.</p>
             </div>
-            
+
             <div class="contact-methods">
                 <div class="contact-method">
                     <div class="method-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <h3>Correo Electrónico</h3>
-                    <p>Envíanos un mensaje detallado sobre tu proyecto</p>
+                    <h3 data-i18n="contact.email_title">Correo Electrónico</h3>
+                    <p data-i18n="contact.email_subtitle">Envíanos un mensaje detallado sobre tu proyecto</p>
                     <a href="mailto:info@petrovenca.com" class="method-link">info@petrovenca.com</a>
                 </div>
             </div>
@@ -298,57 +337,65 @@
                 <!-- Contact Form -->
                 <div class="contact-form-section">
                     <div class="form-header">
-                        <h2>Solicitar Cotización</h2>
-                        <p>Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas</p>
+                        <h2 data-i18n="contact.form_title">Solicitar Cotización</h2>
+                        <p data-i18n="contact.form_subtitle">Completa el formulario y nos pondremos en contacto contigo
+                            en menos de 24 horas</p>
                     </div>
-                    
+
                     <form id="contactForm" class="modern-form">
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="name">Nombre Completo *</label>
+                                <label for="name" data-i18n="contact.label_name">Nombre Completo *</label>
                                 <input type="text" id="name" name="name" required>
                             </div>
-                            
+
                             <div class="form-group">
-                                <label for="email">Correo Electrónico *</label>
+                                <label for="email" data-i18n="contact.label_email">Correo Electrónico *</label>
                                 <input type="email" id="email" name="email" required>
                             </div>
                         </div>
-                        
+
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="phone">Teléfono</label>
+                                <label for="phone" data-i18n="contact.label_phone">Teléfono</label>
                                 <input type="tel" id="phone" name="phone">
                             </div>
-                            
+
                             <div class="form-group">
-                                <label for="company">Empresa</label>
+                                <label for="company" data-i18n="contact.label_company">Empresa</label>
                                 <input type="text" id="company" name="company">
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="service">Servicio de Interés</label>
+                            <label for="service" data-i18n="contact.label_service">Servicio de Interés</label>
                             <select id="service" name="service">
-                                <option value="">Seleccionar servicio</option>
-                                <option value="perforacion">Perforación de Pozos</option>
-                                <option value="mantenimiento">Mantenimiento de Equipos</option>
-                                <option value="consultoria">Consultoría Técnica</option>
-                                <option value="logistica">Logística y Transporte</option>
-                                <option value="seguridad">Seguridad Industrial</option>
-                                <option value="tecnologia">Soluciones Tecnológicas</option>
-                                <option value="otro">Otro</option>
+                                <option value="" data-i18n="contact.select_service">Seleccionar servicio</option>
+                                <option value="perforacion" data-i18n="contact.option_drilling">Perforación de Pozos
+                                </option>
+                                <option value="mantenimiento" data-i18n="contact.option_maintenance">Mantenimiento de
+                                    Equipos</option>
+                                <option value="consultoria" data-i18n="contact.option_consulting">Consultoría Técnica
+                                </option>
+                                <option value="logistica" data-i18n="contact.option_logistics">Logística y Transporte
+                                </option>
+                                <option value="seguridad" data-i18n="contact.option_security">Seguridad Industrial
+                                </option>
+                                <option value="tecnologia" data-i18n="contact.option_technology">Soluciones Tecnológicas
+                                </option>
+                                <option value="otro" data-i18n="contact.option_other">Otro</option>
                             </select>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="message">Mensaje *</label>
-                            <textarea id="message" name="message" placeholder="Describe tu proyecto o consulta..." required></textarea>
+                            <label for="message" data-i18n="contact.label_message">Mensaje *</label>
+                            <textarea id="message" name="message" data-i18n-placeholder="contact.placeholder_message"
+                                placeholder="Describe tu proyecto o consulta..." required></textarea>
                         </div>
-                        
+
                         <button type="submit" class="btn btn-primary btn-large">
                             <i class="fas fa-paper-plane"></i>
-                            Enviar Mensaje
+                            <span data-i18n="contact.btn_send">Enviar Mensaje</span>
                         </button>
                     </form>
                 </div>
@@ -356,16 +403,71 @@
         </div>
     </section>
 
+    <!-- Offices / Locations Section -->
+    <section class="offices-section" id="offices">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="contact.offices_title">Nuestras Oficinas</h2>
+                <p data-i18n="contact.offices_subtitle">Presencia estratégica en Venezuela y Estados Unidos para servir
+                    a nuestros clientes</p>
+            </div>
+
+            <!-- Location Tabs -->
+            <div class="offices-tabs">
+                <button class="office-tab active" data-location="maracaibo" onclick="switchOffice('maracaibo')">
+                    <span class="office-tab-flag">🇻🇪</span>
+                    <span data-i18n="contact.office_maracaibo">Maracaibo, Venezuela</span>
+                </button>
+                <button class="office-tab" data-location="houston" onclick="switchOffice('houston')">
+                    <span class="office-tab-flag">🇺🇸</span>
+                    <span data-i18n="contact.office_houston">Houston, Texas</span>
+                </button>
+            </div>
+
+            <!-- Map + Info Container -->
+            <div class="offices-content">
+                <!-- Map -->
+                <div class="offices-map-container">
+                    <iframe id="officeMap"
+                        src="https://maps.google.com/maps?q=10.667402140373035,-71.59276625576673&z=17&output=embed"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <!-- Office Info Card -->
+                <div class="office-info-card" id="officeInfoCard">
+                    <div class="office-info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="office-info-details">
+                        <h3 id="officeInfoName" data-i18n="contact.office_mcbo_name">Oficinas Administrativas Petrovenca
+                        </h3>
+                        <p id="officeInfoAddress" class="office-address">
+                            <i class="fas fa-location-dot"></i>
+                            MC84+RV8, Avenida El Milagro, Maracaibo 4002, Zulia, Venezuela
+                        </p>
+                    </div>
+                    <a id="officeMapLink" href="https://maps.app.goo.gl/oodLGQTXiKvgawQX7" target="_blank"
+                        rel="noopener noreferrer" class="office-map-link">
+                        <span data-i18n="contact.office_view_map">Ver en Google Maps</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
             <div class="cta-content">
-                <h2>¿Listo para trabajar con nosotros?</h2>
-                <p>Solicita una cotización para tu proyecto petrolero</p>
+                <h2 data-i18n="contact.cta_title">¿Listo para trabajar con nosotros?</h2>
+                <p data-i18n="contact.cta_subtitle">Solicita una cotización para tu proyecto petrolero</p>
                 <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary">Solicitar Cotización</a>
-                    <a href="servicios.html" class="btn btn-secondary">Ver Servicios</a>
+                    <a href="#contact" class="btn btn-primary" data-i18n="cta.button">Solicitar Cotización</a>
+                    <a href="servicios.html" class="btn btn-secondary" data-i18n="contact.cta_services">Ver
+                        Servicios</a>
                 </div>
             </div>
         </div>
@@ -377,30 +479,32 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>PETROVENCA</h3>
-                    <p>Líderes en servicios petroleros con excelencia, seguridad e innovación en Venezuela.</p>
+                    <p data-i18n="footer.description">Líderes en servicios petroleros con excelencia, seguridad e
+                        innovación en Venezuela.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Enlaces Rápidos</h4>
+                    <h4 data-i18n="footer.quick_links">Enlaces Rápidos</h4>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="blog.html">En Línea</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+                        <li><a href="servicios.html" data-i18n="nav.services">Servicios</a></li>
+                        <li><a href="blog.html" data-i18n="nav.online">En Línea</a></li>
+                        <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contacto</h4>
+                    <h4 data-i18n="footer.contact">Contacto</h4>
                     <p>Email: info@petrovenca.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Petrovenca. Todos los derechos reservados.</p>
+                <p>&copy; 2024 Petrovenca. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
             </div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
-    
+
     <!-- Universal mobile menu script -->
     <script>
         // Universal mobile menu handler
@@ -408,10 +512,10 @@
             console.log('Mobile menu handler called');
             const hamburger = document.querySelector('.hamburger');
             const navMenu = document.querySelector('.nav-menu');
-            
+
             if (hamburger && navMenu) {
                 const isActive = navMenu.classList.contains('active');
-                
+
                 if (isActive) {
                     // Close menu
                     hamburger.classList.remove('active');
@@ -427,36 +531,36 @@
                 }
             }
         }
-        
+
         // Set up event listeners when page loads
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const hamburger = document.querySelector('.hamburger');
             const navMenu = document.querySelector('.nav-menu');
-            
+
             if (hamburger && navMenu) {
                 console.log('Setting up mobile menu');
-                
+
                 // Multiple event listeners for maximum compatibility
                 hamburger.addEventListener('click', handleMobileMenu);
                 hamburger.addEventListener('touchend', handleMobileMenu);
-                hamburger.addEventListener('touchstart', function(e) {
+                hamburger.addEventListener('touchstart', function (e) {
                     e.preventDefault();
                 }, { passive: false });
-                
+
                 // Close menu when clicking nav links
                 const navLinks = document.querySelectorAll('.nav-link');
                 navLinks.forEach(link => {
-                    link.addEventListener('click', function() {
+                    link.addEventListener('click', function () {
                         hamburger.classList.remove('active');
                         navMenu.classList.remove('active');
                         document.body.style.overflow = 'auto';
                     });
                 });
-                
+
                 // Close menu when clicking action buttons
                 const actionButtons = document.querySelectorAll('.action-btn');
                 actionButtons.forEach(button => {
-                    button.addEventListener('click', function() {
+                    button.addEventListener('click', function () {
                         hamburger.classList.remove('active');
                         navMenu.classList.remove('active');
                         document.body.style.overflow = 'auto';
@@ -469,7 +573,7 @@
         // Contact Form Email Builder
         document.getElementById('contactForm').addEventListener('submit', (e) => {
             e.preventDefault();
-            
+
             // Get form values
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
@@ -477,10 +581,10 @@
             const company = document.getElementById('company').value;
             const service = document.getElementById('service').value;
             const message = document.getElementById('message').value;
-            
+
             // Build email subject
             const subject = `Solicitud de Cotización - ${service || 'Servicio'}`;
-            
+
             // Build email body
             let emailBody = `Hola Petrovenca,\n\n`;
             emailBody += `Me comunico para solicitar información sobre sus servicios.\n\n`;
@@ -493,17 +597,66 @@
             emailBody += `Mensaje:\n${message}\n\n`;
             emailBody += `Gracias por su atención.\n\n`;
             emailBody += `Saludos,\n${name}`;
-            
+
             // Encode for mailto
             const encodedSubject = encodeURIComponent(subject);
             const encodedBody = encodeURIComponent(emailBody);
-            
+
             // Create mailto link
             const mailtoLink = `mailto:info@petrovenca.net?subject=${encodedSubject}&body=${encodedBody}`;
-            
+
             // Open email client
             window.location.href = mailtoLink;
         });
     </script>
+
+    <!-- Office Location Switcher -->
+    <script>
+        const officeData = {
+            maracaibo: {
+                mapSrc: 'https://maps.google.com/maps?q=10.667402140373035,-71.59276625576673&z=17&output=embed',
+                name: { es: 'Oficinas Administrativas Petrovenca', en: 'Petrovenca Administrative Offices' },
+                address: 'MC84+RV8, Avenida El Milagro, Maracaibo 4002, Zulia, Venezuela',
+                mapsLink: 'https://maps.app.goo.gl/oodLGQTXiKvgawQX7'
+            },
+            houston: {
+                mapSrc: 'https://maps.google.com/maps?q=7407+Miller+Rd+2,+Houston,+TX+77049&z=17&output=embed',
+                name: { es: 'Oficina Houston', en: 'Houston Office' },
+                address: '7407 Miller Rd 2, Houston, TX 77049, USA',
+                mapsLink: 'https://maps.app.goo.gl/oY3cbXWSEHWufgyA9'
+            }
+        };
+
+        function switchOffice(location) {
+            const data = officeData[location];
+            if (!data) return;
+
+            // Update active tab
+            document.querySelectorAll('.office-tab').forEach(tab => {
+                tab.classList.toggle('active', tab.dataset.location === location);
+            });
+
+            // Animate info card
+            const infoCard = document.getElementById('officeInfoCard');
+            infoCard.style.opacity = '0';
+            infoCard.style.transform = 'translateY(10px)';
+
+            // Update map
+            const mapIframe = document.getElementById('officeMap');
+            mapIframe.src = data.mapSrc;
+
+            // Update info with delay for animation
+            setTimeout(() => {
+                const lang = (typeof currentLanguage !== 'undefined') ? currentLanguage : 'es';
+                document.getElementById('officeInfoName').textContent = data.name[lang] || data.name.es;
+                document.getElementById('officeInfoAddress').innerHTML = '<i class="fas fa-location-dot"></i> ' + data.address;
+                document.getElementById('officeMapLink').href = data.mapsLink;
+
+                infoCard.style.opacity = '1';
+                infoCard.style.transform = 'translateY(0)';
+            }, 200);
+        }
+    </script>
 </body>
+
 </html>
