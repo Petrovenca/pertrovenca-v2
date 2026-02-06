@@ -5090,15 +5090,18 @@ body.modal-open {
         font-size: 0.85rem;
     }
 
-    .nav-logo img {
-        height: 60px;
+    .nav-container {
+        padding: 0 15px;
     }
 
-    .nav-container {
-        height: 70px;
-        padding: 0 15px;
-        align-items: flex-end;
-        padding-bottom: 10px;
+    .language-selector {
+        margin-right: 0.75rem;
+        margin-left: auto;
+        margin-top: 16px;
+    }
+
+    .hamburger {
+        margin-top: 16px;
     }
 
     .lang-dropdown {
