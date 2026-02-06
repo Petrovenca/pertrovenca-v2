@@ -5097,6 +5097,8 @@ body.modal-open {
     .nav-container {
         height: 70px;
         padding: 0 15px;
+        align-items: flex-end;
+        padding-bottom: 10px;
     }
 
     .lang-dropdown {
